@@ -16,12 +16,12 @@ resource "aws_lb_target_group" "tg" {
   protocol = "HTTP"
   vpc_id   = "${aws_vpc.vpc-main.id}"
   health_check {
-    interval            = "30"
+    interval            = "10"
     path                = "/ping"
     port                = "traffic-port"
     protocol            = "HTTP"
     timeout             = "5"
-    healthy_threshold   = "5"
+    healthy_threshold   = "2"
     unhealthy_threshold = "2"
     matcher             = "200-499"
   }

@@ -16,3 +16,7 @@ variable "ami" {
 variable "keyname" {
   default = "ranjith"
 }
+
+variable "instance_type" {
+  default = "t2.micro"
+}
