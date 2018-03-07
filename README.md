@@ -1,7 +1,7 @@
 ## Infrastructure current setup 
 
 ```
-*1 vpn/public subnet with internet gw
+*1 public subnet with internet gw
 *1 alb with health check on /ping attached to 2 ec2 servers
 *2 ec2 instance with 4 docker running
 ```
