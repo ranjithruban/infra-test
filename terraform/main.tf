@@ -16,10 +16,10 @@ module "aws" {
 
 module "docker"{
 	source = "./docker"
-	aws_ip_1 = "${module.aws.vm_ip_1}"
+	aws_ip = "${module.aws.vm_ip_1}"
 }
 
 module "docker1"{
-      source = "./docker1"
-        aws_ip_2 = "${module.aws.vm_ip_2}"
+      source = "./docker"
+        aws_ip = "${module.aws.vm_ip_2}"
 }

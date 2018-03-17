@@ -1,8 +1,8 @@
 # Configure the Docker provider
-variable "aws_ip_1" {
+variable "aws_ip" {
 	
 }
 
 provider "docker" {
-    host = "tcp://${var.aws_ip_1}:2375/"
+    host = "tcp://${var.aws_ip}:2375/"
 }
