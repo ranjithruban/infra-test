@@ -1,3 +1,3 @@
 #!/bin/bash
 echo "untar m2"
-tar -xvsf m2.tar.gz /var/jenkins_home/
+tar -xzf m2.tar.gz -C /var/jenkins_home/
