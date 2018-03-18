@@ -24,7 +24,7 @@ pipeline {
         }
         stage('Add m2 folder to slave') {
             steps {
-                sh("m2.sh")
+                sh("deploy/m2.sh")
             }
         }
         stage("Build and deploy") {
