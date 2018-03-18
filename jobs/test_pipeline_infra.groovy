@@ -1,6 +1,6 @@
-pipelineJob("test_pipeline") {
+pipelineJob("test_pipeline_infra") {
 
-    description("Test Declarative Pipeline")
+    description("Test Pipeline infra")
 
     //parameters {
     //    stringParam('app', 'test-service', 'application name')
