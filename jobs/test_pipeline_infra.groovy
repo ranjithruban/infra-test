@@ -4,7 +4,7 @@ pipelineJob("test_pipeline") {
 
     //parameters {
     //    stringParam('app', 'test-service', 'application name')
-    }
+    //}
 
     definition {
         cpsScm {
