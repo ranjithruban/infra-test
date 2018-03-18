@@ -22,11 +22,11 @@ pipeline {
         }
            }
         }
-        stage('Add m2 folder to slave') {
-            steps {
-                sh("deploy/m2.sh")
-            }
-        }
+//        stage('Add m2 folder to slave') {
+//           steps {
+//                sh("deploy/m2.sh")
+//            }
+//        }
         stage("Build and deploy") {
             steps {
                 sh("deploy/deploy.sh")
