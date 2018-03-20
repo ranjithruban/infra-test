@@ -1,5 +1,5 @@
 FROM python:3
-COPY serve.py  /root/serve.py
-COPY css/   /root/css
+COPY docker/static-assets/serve.py  /root/serve.py
+COPY docker/static-assets/css/   /root/css
 WORKDIR /root
 CMD ["/root/serve.py"]
