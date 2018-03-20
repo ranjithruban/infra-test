@@ -11,6 +11,7 @@ echo $git_branch
 image_tag=`echo $SHORT_COMMIT`
 echo $image_tag
 
+echo ${password}
 sudo docker login -u ranjithruban -p ${password}
 
 for image in frontend quotes newsfeed static-assets; do
