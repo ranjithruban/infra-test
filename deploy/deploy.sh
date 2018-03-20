@@ -4,8 +4,6 @@
 make clean all
 
 #build the docker images
-cd build/
-
 REGISTRY="test"
 
 git_branch=`echo $BRANCH_NAME`
