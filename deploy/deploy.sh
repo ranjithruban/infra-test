@@ -16,10 +16,10 @@ echo $image_tag
 for image in frontend quotes newsfeed static-assets; do
     echo "** Building docker image $image"
     image_name="$REGISTRY/test-infra/$image"
-    image_id=`docker build -q --force-rm -f docker/$image/Dockerfile .`
+    image_id=`sudo docker build -q --force-rm -f docker/$image/Dockerfile .`
     echo "** Tagging image id $image_id"
-    docker tag $image_id $image_name:$image_tag
-    docker tag $image_id $image_name:latest
+    sudo docker tag $image_id $image_name:$image_tag
+    sudo docker tag $image_id $image_name:latest
     echo "** Pushing $image_name"
     #docker push $image_name:$image_tag >/dev/null
     #docker push $image_name:latest >/dev/null
