@@ -11,7 +11,7 @@ echo $git_branch
 image_tag=`echo $SHORT_COMMIT`
 echo $image_tag
 
-sudo docker login --username=ranjithruban --password=fd1a384c-93d5-47a6-90b8-bbbecc9181e9
+sudo docker login --username=ranjithruban --password=${password}
 
 for image in frontend quotes newsfeed static-assets; do
     echo "** Building docker image $image"
