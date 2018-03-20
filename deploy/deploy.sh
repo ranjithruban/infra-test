@@ -4,7 +4,7 @@
 make clean all
 
 #build the docker images
-REGISTRY="ranjith"
+REGISTRY="ranjithruban"
 
 git_branch=`echo $BRANCH_NAME`
 echo $git_branch
