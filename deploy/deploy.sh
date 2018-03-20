@@ -21,8 +21,8 @@ for image in frontend quotes newsfeed static-assets; do
     sudo docker tag $image_id $image_name:$image_tag
     sudo docker tag $image_id $image_name:latest
     echo "** Pushing $image_name"
-    docker push $image_name:$image_tag
-    docker push $image_name:latest
+    sudo docker push $image_name:$image_tag
+    sudo docker push $image_name:latest
     echo "** $image_name:latest pushed"
     echo "** $image_name:$image_tag pushed"
 done
