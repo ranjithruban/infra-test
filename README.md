@@ -16,4 +16,3 @@ local testing can be done using the folder docker. This have `docker compose` an
 The app should be running in port 80 of loadbalancer dns.
 
 * Jenkins pipeline job can be added which detects git push to master and deploys the same terraform code. Take one ec2 down and and deploy the code and then deploy 2nd node.
-* environment like staging , qa and production can be added in terraform as variables and deploy it as needed. 
