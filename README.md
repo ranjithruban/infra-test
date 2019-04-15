@@ -5,12 +5,12 @@ local testing can be done using the folder docker. This have `docker compose` an
 2) Run docker-compose to up the web app. `sudo docker-compose -f docker-compose.yml up -d`
 
 1) deploy aws instances using 
-#terraform init 
+`#terraform init 
 #terraform plan -target=module.aws
-#terraform apply -target=module.aws
+#terraform apply -target=module.aws`
 2) deploy first container
-#terraform plan -target=module.docker
-#terraform apply -target=module.docker
+`#terraform plan -target=module.docker
+#terraform apply -target=module.docker`
 3) deploy second container
 
 The app should be running in port 80 of loadbalancer dns.
