@@ -1,7 +1,7 @@
 How to deploy.
 local testing can be done using the folder docker. This have `docker compose` and docker files to build the images. 
 
-1) Build the 4 image using `docker build`
+1) Build the images using `docker build`
 2) Run docker-compose to up the web app. `sudo docker-compose -f docker-compose.yml up -d`
 
 1) deploy aws instances using 
